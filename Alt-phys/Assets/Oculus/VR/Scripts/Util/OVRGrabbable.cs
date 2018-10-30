@@ -21,6 +21,7 @@ limitations under the License.
 
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// An object that can be grabbed and thrown by OVRGrabber.
@@ -37,6 +38,10 @@ public class OVRGrabbable : MonoBehaviour
     protected Transform m_snapOffset;
     [SerializeField]
     protected Collider[] m_grabPoints = null;
+    [SerializeField]
+    protected bool isTeleport = false;
+    [SerializeField]
+    protected UnityEngine.Object sceneToLoad;
 
     protected bool m_grabbedKinematic = false;
     protected Collider m_grabbedCollider = null;
@@ -55,7 +60,11 @@ public class OVRGrabbable : MonoBehaviour
 	/// </summary>
     public bool isGrabbed
     {
-        get { return m_grabbedBy != null; }
+        get {
+            if (isTeleport == true) {
+                SceneManager.LoadScene(sceneToLoad.name);
+            }
+            return m_grabbedBy != null; }
     }
 
 	/// <summary>
