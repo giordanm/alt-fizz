@@ -61,6 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Demo\Scripts\Element.cs" />
+    <Compile Include="Assets\Demo\Scripts\ProjectileFunction.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -309,9 +311,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\WonkyFizz\Earth.cs" />
-    <Compile Include="Assets\WonkyFizz\Element.cs" />
     <Compile Include="Assets\WonkyFizz\OGPhysics.cs" />
-    <Compile Include="Assets\WonkyFizz\ProjectileFunction.cs" />
     <Compile Include="Assets\WonkyFizz\Scenes\fire.cs" />
     <Compile Include="Assets\WonkyFizz\ThrowSimulation.cs" />
     <Compile Include="Assets\WonkyFizz\Water.cs" />

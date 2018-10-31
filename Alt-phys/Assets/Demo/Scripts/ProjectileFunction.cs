@@ -9,7 +9,6 @@ public class ProjectileFunction : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(0f, 0f, 0f);
     }
 
     private void FixedUpdate()

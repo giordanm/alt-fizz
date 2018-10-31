@@ -10,7 +10,6 @@ public class fire : MonoBehaviour {
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(0, 10, 0);
     }
 
 	
