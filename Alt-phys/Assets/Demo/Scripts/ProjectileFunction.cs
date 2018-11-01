@@ -22,7 +22,6 @@ public class ProjectileFunction : MonoBehaviour {
         {
             rb.AddForce(-z);
         }
-        rb.AddForce(-9.8f*Vector3.up);
     }
 }
 

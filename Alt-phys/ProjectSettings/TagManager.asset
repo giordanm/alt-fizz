@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Magic
+  - EarthPlane
+  - WaterPlane
   layers:
   - Default
   - TransparentFX

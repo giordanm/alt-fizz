@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Demo/Scenes/DEMOTitle.unity
     guid: 0eeab8989c697476cb47bdfce5b4bdf0
+  - enabled: 1
+    path: Assets/Demo/Scenes/DEMOPlayGround.unity
+    guid: 8fb9d4b57ee88471abbbbbc2f1416062
   m_configObjects: {}
