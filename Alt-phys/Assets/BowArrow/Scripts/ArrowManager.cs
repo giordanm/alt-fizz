@@ -11,7 +11,7 @@ public class ArrowManager : MonoBehaviour
     public static ArrowManager Instance;
 
     //Supposedly Going to track the remote
-    public OvrAvatarTouchController trackedObj;
+    public GameObject trackedObj;
 
     private GameObject currentArrow;
 

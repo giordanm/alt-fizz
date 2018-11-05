@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -489,13 +489,13 @@ Transform:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 591547704}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.15, y: 1.221, z: 0.282}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.10000009, y: 0.10000006, z: 0.10000006}
   m_Children:
   - {fileID: 1492623450}
   - {fileID: 915847195}
-  m_Father: {fileID: 1236146352}
+  m_Father: {fileID: 1285590266}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!1 &652023181 stripped
@@ -567,7 +567,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 679915834}
   m_LocalRotation: {x: -0.5, y: -0.4999999, z: -0.50000006, w: -0.50000006}
-  m_LocalPosition: {x: -6.0337715, y: 3.110001, z: -1.7900025}
+  m_LocalPosition: {x: 3.25, y: 0, z: 0}
   m_LocalScale: {x: 2.1652024, y: 2.1652012, z: 1}
   m_Children: []
   m_Father: {fileID: 1533641258}
@@ -1003,44 +1003,24 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
       propertyPath: StartWithControllers
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011125779090, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010482306814, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1236146350 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 157742, guid: 84c8b8609f9bb434eaf5248f17ff1293,
-    type: 2}
-  m_PrefabInternal: {fileID: 1236146349}
---- !u!114 &1236146351 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 11477770, guid: 84c8b8609f9bb434eaf5248f17ff1293,
-    type: 2}
-  m_PrefabInternal: {fileID: 1236146349}
-  m_Script: {fileID: 11500000, guid: 77e19ec58d4a9e844970103e5bd8946a, type: 3}
---- !u!4 &1236146352 stripped
+--- !u!4 &1285590266 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400938, guid: 84c8b8609f9bb434eaf5248f17ff1293,
+  m_CorrespondingSourceObject: {fileID: 477154, guid: ce816f2e6abb0504092c23ed9b970dfd,
     type: 2}
-  m_PrefabInternal: {fileID: 1236146349}
---- !u!114 &1236146353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1236146350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 769fd18fc6a664bbfa6fad9928a261a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackedObj: {fileID: 1236146351}
-  stringAttachPoint: {fileID: 1010039085}
-  arrowStartPoint: {fileID: 679915834}
-  stringStartPoint: {fileID: 1533641257}
-  arrowPrefab: {fileID: 1295040378600982, guid: 47fade9eee3ab46e188d18e158f67934,
-    type: 2}
+  m_PrefabInternal: {fileID: 1770462322}
 --- !u!1 &1402076297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1114,28 @@ Transform:
   m_Father: {fileID: 591547706}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1512845858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 134650, guid: ce816f2e6abb0504092c23ed9b970dfd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1770462322}
+--- !u!114 &1512845860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1512845858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769fd18fc6a664bbfa6fad9928a261a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedObj: {fileID: 1512845858}
+  stringAttachPoint: {fileID: 1010039085}
+  arrowStartPoint: {fileID: 679915834}
+  stringStartPoint: {fileID: 1533641257}
+  arrowPrefab: {fileID: 1295040378600982, guid: 47fade9eee3ab46e188d18e158f67934,
+    type: 2}
 --- !u!1 &1524690028
 GameObject:
   m_ObjectHideFlags: 0
