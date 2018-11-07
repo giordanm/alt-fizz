@@ -63,6 +63,9 @@
   <ItemGroup>
     <Compile Include="Assets\BowArrow\Scripts\Arrow.cs" />
     <Compile Include="Assets\BowArrow\Scripts\ArrowManager.cs" />
+    <Compile Include="Assets\BowArrow\Scripts\ExtraGrabbable.cs" />
+    <Compile Include="Assets\BowArrow\Scripts\HandMagic.cs" />
+    <Compile Include="Assets\BowArrow\Scripts\ReturnToStart.cs" />
     <Compile Include="Assets\Demo\Scripts\Element.cs" />
     <Compile Include="Assets\Demo\Scripts\ProjectileFunction.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />

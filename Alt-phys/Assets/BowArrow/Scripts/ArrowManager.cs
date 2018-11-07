@@ -90,7 +90,7 @@ public class ArrowManager : MonoBehaviour
 
     public void AttachBowToArrow(){
         currentArrow.transform.parent = stringAttachPoint.transform;
-        currentArrow.transform.localPosition = arrowStartPoint.transform.localPosition;
+        currentArrow.transform.position = arrowStartPoint.transform.position;
         currentArrow.transform.rotation = arrowStartPoint.transform.rotation;
 
         isAttached = true;
