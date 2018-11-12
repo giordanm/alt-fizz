@@ -53,6 +53,8 @@ public class ArrowManager : MonoBehaviour
 
     private void PullString(){
         if(isAttached){
+            currentArrow.transform.localPosition = arrowStartPoint.transform.localPosition;
+            currentArrow.transform.localRotation = arrowStartPoint.transform.localRotation;
             float dist = (stringStartPoint.transform.position - trackedObj.transform.position).magnitude;
             stringAttachPoint.transform.localPosition = stringStartPoint.transform.localPosition + new Vector3(5f*dist, 0f, 0f);
 
@@ -90,8 +92,8 @@ public class ArrowManager : MonoBehaviour
 
     public void AttachBowToArrow(){
         currentArrow.transform.parent = stringAttachPoint.transform;
-        currentArrow.transform.position = arrowStartPoint.transform.position;
-        currentArrow.transform.rotation = arrowStartPoint.transform.rotation;
+        currentArrow.transform.localPosition = arrowStartPoint.transform.localPosition;
+        currentArrow.transform.localRotation = arrowStartPoint.transform.localRotation;
 
         isAttached = true;
     }
