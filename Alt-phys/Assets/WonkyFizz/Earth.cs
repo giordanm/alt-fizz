@@ -14,7 +14,7 @@ public class Earth : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
+        rb.AddForce(0, 9.8f, 0);
 	}
 
     private void OnTriggerStay(Collider other)

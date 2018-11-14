@@ -38,6 +38,8 @@ public class HandMagic : MonoBehaviour
 
     public void OnReleased()
     {
+        GameObject destroyThis = arrowthing.GetComponent<ArrowManager>().currentArrow;
+        Destroy(destroyThis);
         arrowthing.GetComponent<ArrowManager>().enabled = false;
         hand.SetActive(true);
         otherhand.SetActive(true);

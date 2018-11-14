@@ -13,7 +13,7 @@ public class ArrowManager : MonoBehaviour
     //Supposedly Going to track the remote
     public GameObject trackedObj;
 
-    private GameObject currentArrow;
+    public GameObject currentArrow;
 
     public GameObject stringAttachPoint;
 
@@ -21,12 +21,18 @@ public class ArrowManager : MonoBehaviour
 
     public GameObject stringStartPoint;
     
-    public GameObject arrowPrefab;
+    public GameObject[] arrowPrefab;
+
+    public int typeNumber;
 
     private bool isAttached = false;
 
     private void Awake()
     {
+        if(typeNumber < 0 || typeNumber > 3)
+        {
+            typeNumber = 0;
+        }
         if(Instance == null){
             Instance = this;
         }
@@ -47,6 +53,17 @@ public class ArrowManager : MonoBehaviour
 
     void Update()
     {
+        if (OVRInput.GetUp(OVRInput.Button.One, OVRInput.Controller.LTouch))
+        {
+            Destroy(currentArrow);
+            if(typeNumber < 3)
+            {
+                typeNumber++;
+            } else
+            {
+                typeNumber = 0;
+            }
+        }
         AttachArrow();
         PullString();
     }
@@ -72,7 +89,8 @@ public class ArrowManager : MonoBehaviour
         currentArrow.GetComponent<Arrow>().Fired();
         Rigidbody r = currentArrow.GetComponent<Rigidbody>();
         r.velocity = currentArrow.transform.forward * 10f * dist;
-        r.useGravity = true;
+        Element test = currentArrow.GetComponent<Element>();
+        test.enabled = true;
 
         stringAttachPoint.transform.position = stringStartPoint.transform.position;
 
@@ -82,7 +100,7 @@ public class ArrowManager : MonoBehaviour
 
     private void AttachArrow(){
         if(currentArrow == null){
-            currentArrow = Instantiate(arrowPrefab);
+            currentArrow = Instantiate(arrowPrefab[typeNumber]);
             //Tracks the movement of the arrow to the movement of the remote
             currentArrow.transform.parent = trackedObj.transform;
             currentArrow.transform.localPosition = new Vector3(0f, 0f, .342f);
