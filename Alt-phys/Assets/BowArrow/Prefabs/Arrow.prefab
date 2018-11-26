@@ -140,9 +140,9 @@ MonoBehaviour:
   element: 0
   material:
   - {fileID: 2100000, guid: 390a103ad7681414ea36559780151e66, type: 2}
-  - {fileID: 2100000, guid: 390a103ad7681414ea36559780151e66, type: 2}
-  - {fileID: 2100000, guid: 390a103ad7681414ea36559780151e66, type: 2}
-  - {fileID: 2100000, guid: 390a103ad7681414ea36559780151e66, type: 2}
+  - {fileID: 2100000, guid: 606c84de43f704f17bf627f51f1dd225, type: 2}
+  - {fileID: 2100000, guid: 588962b4384c4442791f1a9928e7f48f, type: 2}
+  - {fileID: 2100000, guid: 8191c1fb9a89d4344aa44e45edcb40f2, type: 2}
 --- !u!114 &114787728158812138
 MonoBehaviour:
   m_ObjectHideFlags: 1

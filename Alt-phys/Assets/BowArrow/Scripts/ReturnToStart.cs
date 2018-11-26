@@ -3,6 +3,10 @@
 
 //Special Thanks to jeffreyschoch who basically wrote this code, with minor
 //Edits by William Rindone
+
+//If an object is released, returns it to the position it was originally in
+//Note: needs to be on an object with the ExtraGrabbable Script
+
 public class ReturnToStart : MonoBehaviour
 {
 
@@ -18,7 +22,7 @@ public class ReturnToStart : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    // Unity function called once when the game starts
+    // Sets the initial location and orientation of the obeject
     private void Start()
     {
         initialLocalPosition = transform.localPosition;
@@ -39,6 +43,7 @@ public class ReturnToStart : MonoBehaviour
         grabbable.OnGrabEnd.RemoveListener(OnReleased);
     }
 
+    //When the object is released, returns it to its inital position
     public void OnReleased()
     {
         transform.position = initialLocalPosition;
@@ -47,6 +52,7 @@ public class ReturnToStart : MonoBehaviour
         rb.freezeRotation = true;
     }
 
+    //does nothing when the object is grabbed
     public void OnGrabbed()
     {
 

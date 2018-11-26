@@ -7,6 +7,10 @@ TagManager:
   - Magic
   - EarthPlane
   - WaterPlane
+  - EarthArrow
+  - WaterArrow
+  - AirArrow
+  - FireArrow
   layers:
   - Default
   - TransparentFX
