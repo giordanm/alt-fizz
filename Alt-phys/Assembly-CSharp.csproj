@@ -68,6 +68,8 @@
     <Compile Include="Assets\BowArrow\Scripts\ReturnToStart.cs" />
     <Compile Include="Assets\Demo\Scripts\Element.cs" />
     <Compile Include="Assets\Demo\Scripts\ProjectileFunction.cs" />
+    <Compile Include="Assets\Game\Scripts\FunButton.cs" />
+    <Compile Include="Assets\Game\Scripts\MagicAppero.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />

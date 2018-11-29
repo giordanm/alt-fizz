@@ -61,13 +61,37 @@ public class Element : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         //Moves the element up a level when interacting with an object tagged "Magic"
-        if(other.gameObject.CompareTag("Magic")){
+        if (other.gameObject.CompareTag("Magic")) {
             rb.velocity = Vector3.zero;
-            if(element < 3){
+            if (element < 3) {
                 element++;
             } else {
                 element = 0;
             }
+            rend.sharedMaterial = material[element];
+        }
+        if (other.gameObject.CompareTag("EarthArrow"))
+        {
+            rb.velocity = Vector3.zero;
+            element = 0;
+            rend.sharedMaterial = material[element];
+        }
+        if (other.gameObject.CompareTag("WaterArrow"))
+        {
+            rb.velocity = Vector3.zero;
+            element = 1;
+            rend.sharedMaterial = material[element];
+        }
+        if (other.gameObject.CompareTag("AirArrow"))
+        {
+            rb.velocity = Vector3.zero;
+            element = 2;
+            rend.sharedMaterial = material[element];
+        }
+        if (other.gameObject.CompareTag("FireArrow"))
+        {
+            rb.velocity = Vector3.zero;
+            element = 3;
             rend.sharedMaterial = material[element];
         }
     }
