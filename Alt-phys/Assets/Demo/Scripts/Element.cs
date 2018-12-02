@@ -27,6 +27,7 @@ public class Element : MonoBehaviour {
     //2 = Air(Material)
     //3 = Fire(Material)
 
+    private bool stopUpdates = false;
     Renderer rend;
 
 	//On initialization: Sets the object to the proper material
@@ -44,14 +45,20 @@ public class Element : MonoBehaviour {
 	
 	// Update is called once per frame
 	private void FixedUpdate() {
-        //If element is Earth or Water, normal gravity applies
-        if(element < 2){
-            rb.AddForce(-9.8f * Vector3.up);
-        }
+        if (!stopUpdates)
+        {
 
-        //If it's fire, then reverse gravity (easier for user experience)
-        if(element == 3){
-            rb.AddForce(9.8f * Vector3.up);
+            //If element is Earth or Water, normal gravity applies
+            if (element < 2)
+            {
+                rb.AddForce(-9.8f * Vector3.up);
+            }
+
+            //If it's fire, then reverse gravity (easier for user experience)
+            if (element == 3)
+            {
+                rb.AddForce(9.8f * Vector3.up);
+            }
         }
 
         //Otherwise, no gravity (air is not affected by gravity)
@@ -93,6 +100,11 @@ public class Element : MonoBehaviour {
             rb.velocity = Vector3.zero;
             element = 3;
             rend.sharedMaterial = material[element];
+        }
+        if (other.gameObject.CompareTag("StickInThe") && gameObject.CompareTag("EarthArrow"))
+        {
+            rb.velocity = Vector3.zero;
+            stopUpdates = true;
         }
     }
 }

@@ -52,6 +52,7 @@ public class HandMagic : MonoBehaviour
 
         //Turn off the arrowManager
         arrowthing.GetComponent<ArrowManager>().enabled = false;
+   
 
         //Return the hand models
         hand.SetActive(true);

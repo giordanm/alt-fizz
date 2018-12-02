@@ -21,6 +21,8 @@ public class FunButton : MonoBehaviour {
     //Used to send an event for the State machine
     PlayMakerFSM playMakerFsm;
 
+    private bool sentSignal = false;
+
     // Initializes all componenets not managed by the user
     void Start () {
         rend = GetComponent<Renderer>();
@@ -42,10 +44,35 @@ public class FunButton : MonoBehaviour {
         {
             if(element == typio.element)
             {
-                rend.sharedMaterial = typeOfButton[4];
-                playMakerFsm.SendEvent("Dingus");
+                if (!sentSignal)
+                {
+                    rend.sharedMaterial = typeOfButton[4];
+                    playMakerFsm.SendEvent("Dingus");
+                    sentSignal = true;
+                }
             }
         }
     }
-    
+
+    private void OnTriggerStay(Collider other)
+    {
+        Element typio = other.GetComponent<Element>();
+        if (typio != null &&
+            !other.gameObject.CompareTag("EarthArrow") &&
+            !other.gameObject.CompareTag("WaterArrow") &&
+            !other.gameObject.CompareTag("FireArrow") &&
+            !other.gameObject.CompareTag("AirArrow"))
+        {
+            if (element == typio.element)
+            {
+                if (!sentSignal)
+                {
+                    rend.sharedMaterial = typeOfButton[4];
+                    playMakerFsm.SendEvent("Dingus");
+                    sentSignal = true;
+                }
+            }
+        }
+    }
+
 }

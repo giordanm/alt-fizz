@@ -1979,8 +1979,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 266.16406
-        y: 112.13281
+        x: 272.20312
+        y: 104.13281
         width: 100
         height: 16
       isBreakpoint: 0

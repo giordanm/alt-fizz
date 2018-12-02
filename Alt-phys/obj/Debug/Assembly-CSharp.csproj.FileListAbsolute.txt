@@ -1,0 +1,2 @@
+C:\Users\emtechguest\Documents\GitHub\alt-fizz\Alt-phys\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\emtechguest\Documents\GitHub\alt-fizz\Alt-phys\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
