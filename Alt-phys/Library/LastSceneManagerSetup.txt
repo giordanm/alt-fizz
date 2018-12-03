@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Game/Scenes/ArrowTutorial.unity
+- path: Assets/Demo/Scenes/DEMOTitle.unity
   isLoaded: 1
   isActive: 1

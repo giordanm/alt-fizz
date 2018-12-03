@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Demo/Scenes/DEMOTitle.unity
+    guid: 0eeab8989c697476cb47bdfce5b4bdf0
+  - enabled: 1
     path: Assets/Game/Scenes/ArrowTutorial.unity
     guid: c0424c8fe31bda1469e6b24669474d21
   - enabled: 1

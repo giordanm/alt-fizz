@@ -12,6 +12,8 @@ TagManager:
   - AirArrow
   - FireArrow
   - StickInThe
+  - QuitBox
+  - TeleportBox
   layers:
   - Default
   - TransparentFX
