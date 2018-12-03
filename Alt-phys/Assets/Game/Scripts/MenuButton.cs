@@ -17,6 +17,11 @@ public class MenuButton : MonoBehaviour
         rend.sharedMaterial = states[0];
     }
 
+    private void OnEnable()
+    {
+        rend.sharedMaterial = states[0];
+    }
+
     private void OnTriggerStay(Collider other)
     {
         rend.sharedMaterial = states[1];
@@ -27,6 +32,10 @@ public class MenuButton : MonoBehaviour
         if (gameObject.CompareTag("TeleportBox") && OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {
             SceneManager.LoadScene(sceneToLoad.name);
+        }
+        if (gameObject.CompareTag("StateBox") && OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
+        {
+            gameObject.GetComponent<PlayMakerFSM>().SendEvent("Button Pressed");
         }
     }
 
@@ -40,6 +49,10 @@ public class MenuButton : MonoBehaviour
         if (gameObject.CompareTag("TeleportBox") && OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {
             SceneManager.LoadScene(sceneToLoad.name);
+        }
+        if (gameObject.CompareTag("StateBox") && OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
+        {
+            gameObject.GetComponent<PlayMakerFSM>().SendEvent("Button Pressed");
         }
     }
 
