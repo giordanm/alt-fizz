@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Game/Scenes/CarpetRide.unity
+- path: Assets/Game/Scenes/FirstLevel.unity
   isLoaded: 1
   isActive: 1

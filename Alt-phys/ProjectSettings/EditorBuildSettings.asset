@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/Island.unity
     guid: 8f24106be0ee3544fbfce16e008928d2
+  - enabled: 1
+    path: Assets/Game/Scenes/CarpetRide.unity
+    guid: 3f779bf1cefd40643af739c4765eef2a
+  - enabled: 1
+    path: Assets/Game/Scenes/Room2.unity
+    guid: e2b60fb25d1648a4ca194d272162d5cd
   m_configObjects: {}

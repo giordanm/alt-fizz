@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0332bf538b3f0248bc7f21165a10734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 0}
+  sceneToLoad: {fileID: 102900000, guid: e2b60fb25d1648a4ca194d272162d5cd, type: 3}
   states:
   - {fileID: 2100000, guid: 3d8ea94f391559441b9162559a536394, type: 2}
   - {fileID: 2100000, guid: 83ba56a6a2b1a904da130a98b3f3f90e, type: 2}
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0332bf538b3f0248bc7f21165a10734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: {fileID: 0}
+  sceneToLoad: {fileID: 102900000, guid: 3f779bf1cefd40643af739c4765eef2a, type: 3}
   states:
   - {fileID: 2100000, guid: 071593b0b19a0354180ea70ec650277a, type: 2}
   - {fileID: 2100000, guid: 83ba56a6a2b1a904da130a98b3f3f90e, type: 2}
