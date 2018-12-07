@@ -12,13 +12,15 @@ public class MenuButton : MonoBehaviour
 
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        rend = gameObject.GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = states[0];
     }
 
     private void OnEnable()
     {
+        rend = gameObject.GetComponent<Renderer>();
+        rend.enabled = true;
         rend.sharedMaterial = states[0];
     }
 
