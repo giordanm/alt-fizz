@@ -54,6 +54,8 @@ public class FunButton : MonoBehaviour {
         }
     }
 
+    // Repeat of OnTriggerEnter, for if the box is already in the trigger, and then changed
+    // to the type needed.
     private void OnTriggerStay(Collider other)
     {
         Element typio = other.GetComponent<Element>();

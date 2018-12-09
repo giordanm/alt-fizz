@@ -77,30 +77,40 @@ public class Element : MonoBehaviour {
             }
             rend.sharedMaterial = material[element];
         }
+
+        //Turns the object into an Earth Object (normal Gravity)
         if (other.gameObject.CompareTag("EarthArrow"))
         {
             rb.velocity = Vector3.zero;
             element = 0;
             rend.sharedMaterial = material[element];
         }
+
+        //Turns the object into a Water Object (normal Gravity)
         if (other.gameObject.CompareTag("WaterArrow"))
         {
             rb.velocity = Vector3.zero;
             element = 1;
             rend.sharedMaterial = material[element];
         }
+
+        //Turns the object into an Air Object (Zero Gravity)
         if (other.gameObject.CompareTag("AirArrow"))
         {
             rb.velocity = Vector3.zero;
             element = 2;
             rend.sharedMaterial = material[element];
         }
+
+        //Turns the object into a Fire Object (Negative Gravity)
         if (other.gameObject.CompareTag("FireArrow"))
         {
             rb.velocity = Vector3.zero;
             element = 3;
             rend.sharedMaterial = material[element];
         }
+
+        //If the object is called StickInThe, and this is an arrow, has the arrow stick in the object. (and stops update the object)
         if (other.gameObject.CompareTag("StickInThe") && gameObject.CompareTag("EarthArrow"))
         {
             rb.velocity = Vector3.zero;

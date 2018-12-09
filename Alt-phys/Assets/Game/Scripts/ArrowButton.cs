@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.Events;
 
 //Code by William Rindone
-//A script for a button (attach to a plane)
+//A script for a button 
 //For material list:
-//Size = 5
-//Same order of element materials
-//typeOfButton[4] = activatedSwitch material
+//Size = 2
+//typeOfButton[0] = EarthTarget materail
+//typeOfButton[1] = GreenTarget material
 
 public class ArrowButton : MonoBehaviour
 {
@@ -33,8 +33,8 @@ public class ArrowButton : MonoBehaviour
         playMakerFsm = GetComponent<PlayMakerFSM>();
     }
 
-    // If an object isn't an arrow, activates the button and sends out a signal to send
-    // a playmaker event (and sets the button to its activated color
+    // If an object is an earth arrow, activates the button and sends out a signal to send
+    // a playmaker event (and sets the button to its activated color) (Typically GreenTarget)
     private void OnTriggerEnter(Collider other)
     {
         Element typio = other.GetComponent<Element>();
@@ -53,6 +53,7 @@ public class ArrowButton : MonoBehaviour
         }
     }
 
+    //Repeat of OnTriggerEnter, for instances where the arrow sticks in it.
     private void OnTriggerStay(Collider other)
     {
         Element typio = other.GetComponent<Element>();

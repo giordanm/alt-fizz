@@ -63,7 +63,7 @@ public class Arrow : MonoBehaviour {
         }
     }
 
-    //Hey, Future me,
+    //Hey, Future Groups,
     //Here's an explanation on checking controller presses for OVR found
     //on a forum somewhere (sorry, I would post credit, but lost the link)
     /*

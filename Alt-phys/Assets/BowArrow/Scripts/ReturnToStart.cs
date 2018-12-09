@@ -7,6 +7,10 @@
 //If an object is released, returns it to the position it was originally in
 //Note: needs to be on an object with the ExtraGrabbable Script
 
+//Hi Future Groups. The purpose of this code has changed to allow the object to maintain
+//It's position, while only redoing its rotation. If you ever want to change it to the above
+//Descriptor, simply uncomment any line that contains code.
+
 public class ReturnToStart : MonoBehaviour
 {
 
