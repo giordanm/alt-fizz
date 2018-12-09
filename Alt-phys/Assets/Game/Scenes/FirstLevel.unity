@@ -355,6 +355,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d4716b34bb8a6469c28fcf0d06690f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &218331825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1352458896062528, guid: 84d4716b34bb8a6469c28fcf0d06690f,
+    type: 2}
+  m_PrefabInternal: {fileID: 218331824}
 --- !u!1 &330127137
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,7 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862af81d3c502469485b189e27fb180e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  element: 2
+  element: 3
   material:
   - {fileID: 2100000, guid: 390a103ad7681414ea36559780151e66, type: 2}
   - {fileID: 2100000, guid: 606c84de43f704f17bf627f51f1dd225, type: 2}
@@ -659,7 +664,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 392709264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 3}
+  m_LocalPosition: {x: 0, y: 1, z: 3}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -722,7 +727,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   isTeleport: 1
-  sceneToLoad: {fileID: 102900000, guid: e2b60fb25d1648a4ca194d272162d5cd, type: 3}
+  sceneToLoad: 4
 --- !u!65 &511875142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -730,7 +735,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 511875140}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -750,7 +755,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 336f42c623365e048962dd95c8d1f1c5, type: 2}
+  - {fileID: 2100000, guid: 6d57523b3780b394cb10cf65c16560e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -857,7 +862,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 86b8148f1ec883242a737b2249b09c53, type: 2}
+  - {fileID: 2100000, guid: 33b6f88787d42db4d9a9dcb5cc30f775, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -909,6 +914,7 @@ GameObject:
   - component: {fileID: 848426729}
   - component: {fileID: 848426728}
   - component: {fileID: 848426732}
+  - component: {fileID: 848426733}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1078,12 +1084,16 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.PlaySound
+        - HutongGames.PlayMaker.Actions.DestroyComponent
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: b2cf1000
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000500000009000000
+        actionHashCodes: b2cf10009cdc39059bd6f801
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -1095,18 +1105,53 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 511875140}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 218331825}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 848426727}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: AudioSource
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 7ee58567024c5824da234a2109162d41, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -1122,7 +1167,13 @@ MonoBehaviour:
           networkSync: 0
           value: 1
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -1132,15 +1183,21 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000011000000110000000100000001000000
+        paramDataType: 1400000011000000110000000100000001000000140000001c000000180000000f0000001400000012000000
         paramName:
         - gameObject
         - activate
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000001000000
-        paramByteDataSize: 0000000000000000000000000100000001000000
+        - gameObject
+        - position
+        - clip
+        - volume
+        - gameObject
+        - component
+        paramDataPos: 0000000000000000010000000000000001000000010000000000000000000000000000000200000000000000
+        paramByteDataSize: 0000000000000000000000000100000001000000000000000000000000000000000000000000000000000000
     events:
     - name: ButtonActivated
       isSystemEvent: 0
@@ -1209,6 +1266,101 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!82 &848426733
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 848426727}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 107d01eec6142434887a4a455449f29d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &850662806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,6 +1688,7 @@ GameObject:
   - component: {fileID: 1655504831}
   - component: {fileID: 1655504830}
   - component: {fileID: 1655504829}
+  - component: {fileID: 1655504833}
   m_Layer: 0
   m_Name: Front Wall
   m_TagString: Untagged
@@ -1612,6 +1765,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1655504833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655504828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c35810f1c4640744babd6706f844d31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: {fileID: 102900000, guid: 0eeab8989c697476cb47bdfce5b4bdf0, type: 3}
 --- !u!1 &1662385866 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1872043993317880, guid: 84d4716b34bb8a6469c28fcf0d06690f,
@@ -1650,7 +1815,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4928799839918498, guid: 7f2ca419f90add240bb05019d0f9f9d2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 4928799839918498, guid: 7f2ca419f90add240bb05019d0f9f9d2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1694,6 +1859,11 @@ Prefab:
     - target: {fileID: 4928799839918498, guid: 7f2ca419f90add240bb05019d0f9f9d2, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65623780995966342, guid: 7f2ca419f90add240bb05019d0f9f9d2,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f2ca419f90add240bb05019d0f9f9d2, type: 2}

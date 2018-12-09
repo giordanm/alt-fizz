@@ -139,7 +139,7 @@ public class ArrowManager : MonoBehaviour
         //on how far it's pulled back (multiplied by a value, in this case 10f,
         //but that can be changed on preference
         Rigidbody r = currentArrow.GetComponent<Rigidbody>();
-        r.velocity = currentArrow.transform.forward * 10f * dist;
+        r.velocity = currentArrow.transform.forward * 20f * dist;
 
         //Also tells arrow to start being effected similarly to how the elements are
         Element test = currentArrow.GetComponent<Element>();

@@ -6,21 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Demo/Scenes/DEMOTitle.unity
+    path: Assets/Game/Scenes/DEMOTitle.unity
     guid: 0eeab8989c697476cb47bdfce5b4bdf0
   - enabled: 1
     path: Assets/Game/Scenes/ArrowTutorial.unity
     guid: c0424c8fe31bda1469e6b24669474d21
   - enabled: 1
+    path: Assets/Game/Scenes/StarWars.unity
+    guid: 7844f8cc2011b43479f547d9906b8fa2
+  - enabled: 1
     path: Assets/Game/Scenes/FirstLevel.unity
     guid: 7e2445107c036e941b50019892d29ad6
   - enabled: 1
-    path: Assets/Game/Scenes/Island.unity
-    guid: 8f24106be0ee3544fbfce16e008928d2
+    path: Assets/Game/Scenes/Room2.unity
+    guid: e2b60fb25d1648a4ca194d272162d5cd
+  - enabled: 1
+    path: Assets/Game/Scenes/Room 2 Copy.unity
+    guid: e10738375779eb649a38fc06d352a4fd
   - enabled: 1
     path: Assets/Game/Scenes/CarpetRide.unity
     guid: 3f779bf1cefd40643af739c4765eef2a
   - enabled: 1
-    path: Assets/Game/Scenes/Room2.unity
-    guid: e2b60fb25d1648a4ca194d272162d5cd
+    path: Assets/Game/Scenes/Island.unity
+    guid: 8f24106be0ee3544fbfce16e008928d2
   m_configObjects: {}

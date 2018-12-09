@@ -10,7 +10,7 @@
 public class ReturnToStart : MonoBehaviour
 {
 
-    private Vector3 initialLocalPosition;
+   // private Vector3 initialLocalPosition;
     private Quaternion initialLocalRotation;
     private ExtraGrabbable grabbable;
     private Rigidbody rb;
@@ -25,7 +25,7 @@ public class ReturnToStart : MonoBehaviour
     // Sets the initial location and orientation of the obeject
     private void Start()
     {
-        initialLocalPosition = transform.localPosition;
+        //initialLocalPosition = transform.localPosition;
         initialLocalRotation = transform.localRotation;
     }
 
@@ -46,7 +46,7 @@ public class ReturnToStart : MonoBehaviour
     //When the object is released, returns it to its inital position
     public void OnReleased()
     {
-        transform.position = initialLocalPosition;
+       // transform.position = initialLocalPosition;
         transform.localRotation = initialLocalRotation;
         rb.velocity = Vector3.zero;
         rb.freezeRotation = true;

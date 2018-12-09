@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuButton : MonoBehaviour
 {
 
-    public UnityEngine.Object sceneToLoad;
+    public int sceneToLoad;
     public Material[] states;
     Renderer rend;
 
@@ -33,7 +33,7 @@ public class MenuButton : MonoBehaviour
         }
         if (gameObject.CompareTag("TeleportBox") && OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {
-            SceneManager.LoadScene(sceneToLoad.name);
+            SceneManager.LoadScene(sceneToLoad);
         }
         if (gameObject.CompareTag("StateBox") && OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {
@@ -50,7 +50,7 @@ public class MenuButton : MonoBehaviour
         }
         if (gameObject.CompareTag("TeleportBox") && OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {
-            SceneManager.LoadScene(sceneToLoad.name);
+            SceneManager.LoadScene(sceneToLoad);
         }
         if (gameObject.CompareTag("StateBox") && OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {

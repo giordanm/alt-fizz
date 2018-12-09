@@ -2,11 +2,14 @@ WindowsStandalone
 PlayerPath?
 C:/Users/emtechguest/Desktop/Alt-phys.exe
 SceneListBegin?
-Assets/Demo/Scenes/DEMOTitle.unity
+Assets/Game/Scenes/DEMOTitle.unity
 Assets/Game/Scenes/ArrowTutorial.unity
 Assets/Game/Scenes/FirstLevel.unity
 Assets/Game/Scenes/Island.unity
 Assets/Game/Scenes/CarpetRide.unity
+Assets/Game/Scenes/Room2.unity
+Assets/Game/Scenes/StarWars.unity
+Assets/Game/Scenes/Room 2 Copy.unity
 SceneListEnd?
 90c2ec7174376e741f9a1aca7a405252 Assembly-UnityScript.dll:.ThirdPersonCamera
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.LevelReset
@@ -517,6 +520,7 @@ f28e4ecadab159a6a766e83222276ce6 Assembly-CSharp.dll:.VoiceModDemo_Logic
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.OVRVoiceMod
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+fb449fb40df459c09e9cbc6dcaf89212 Assembly-CSharp.dll:.PanicButt
 182e416670915c50a548c38c642db0d8 Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 f35860350df72508419d9f9fcd288594 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour
 182e416670915c50a548c38c642db0d8 Vuforia.UnityExtensions.dll:Vuforia.AnchorStageBehaviour

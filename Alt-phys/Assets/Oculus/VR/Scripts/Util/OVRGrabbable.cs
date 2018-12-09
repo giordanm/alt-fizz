@@ -41,7 +41,7 @@ public class OVRGrabbable : MonoBehaviour
     [SerializeField]
     protected bool isTeleport = false;
     [SerializeField]
-    protected UnityEngine.Object sceneToLoad;
+    protected int sceneToLoad;
 
     protected bool m_grabbedKinematic = false;
     protected Collider m_grabbedCollider = null;
@@ -62,7 +62,7 @@ public class OVRGrabbable : MonoBehaviour
     {
         get {
             if (isTeleport == true) {
-                SceneManager.LoadScene(sceneToLoad.name);
+                SceneManager.LoadScene(sceneToLoad);
             }
             return m_grabbedBy != null; }
     }
