@@ -509,7 +509,7 @@ Prefab:
     - target: {fileID: 114088540399152272, guid: 84d4716b34bb8a6469c28fcf0d06690f,
         type: 2}
       propertyPath: arrowPrefab.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4013198140930996, guid: 84d4716b34bb8a6469c28fcf0d06690f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -566,7 +566,37 @@ Prefab:
         type: 2}
       propertyPath: arrowPrefab.Array.data[4]
       value: 
+      objectReference: {fileID: 1945752306194722, guid: d1c9b487cb597e1429a1ddca09c51ae0,
+        type: 2}
+    - target: {fileID: 114088540399152272, guid: 84d4716b34bb8a6469c28fcf0d06690f,
+        type: 2}
+      propertyPath: arrowPrefab.Array.data[5]
+      value: 
       objectReference: {fileID: 1948420483436042, guid: 32e945ffa18118147b84cc32cc8be389,
+        type: 2}
+    - target: {fileID: 114088540399152272, guid: 84d4716b34bb8a6469c28fcf0d06690f,
+        type: 2}
+      propertyPath: arrowPrefab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1295040378600982, guid: 47fade9eee3ab46e188d18e158f67934,
+        type: 2}
+    - target: {fileID: 114088540399152272, guid: 84d4716b34bb8a6469c28fcf0d06690f,
+        type: 2}
+      propertyPath: arrowPrefab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1414850522150234, guid: 0a4d313f858f44646b2179d6094b558b,
+        type: 2}
+    - target: {fileID: 114088540399152272, guid: 84d4716b34bb8a6469c28fcf0d06690f,
+        type: 2}
+      propertyPath: arrowPrefab.Array.data[2]
+      value: 
+      objectReference: {fileID: 1680353083942570, guid: 5fe3e5a9f29d7054590578ab40de8ddc,
+        type: 2}
+    - target: {fileID: 114088540399152272, guid: 84d4716b34bb8a6469c28fcf0d06690f,
+        type: 2}
+      propertyPath: arrowPrefab.Array.data[3]
+      value: 
+      objectReference: {fileID: 1244351766001266, guid: 11ae20a98f631da4782e95a52df59f73,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d4716b34bb8a6469c28fcf0d06690f, type: 2}
