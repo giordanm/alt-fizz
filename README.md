@@ -92,3 +92,5 @@ LEVEL 7 - island (“Island”)
 OTHER NOTES
 
 We have implemented a "fail safe" / “panic button” to be used if you somehow get stuck in an unwinnable state. It’s not described in the image that we have posted on the wall of each room, but it should be added. You have to pull both triggers on the top of the oculus hand controls for several seconds and it will take you to the main menu.
+
+The scripts in this project are well-commented within the scripts themselves.
