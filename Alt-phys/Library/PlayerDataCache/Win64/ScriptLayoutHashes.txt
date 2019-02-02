@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/emtechguest/Documents/GitHub/alt-fizz/Alt-phys.exe
+C:/Users/emtechguest/Desktop/Alt-phys.exe
 SceneListBegin?
 Assets/Game/Scenes/DEMOTitle.unity
 Assets/Game/Scenes/ArrowTutorial.unity

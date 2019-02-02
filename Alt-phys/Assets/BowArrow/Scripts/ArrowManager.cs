@@ -109,7 +109,7 @@ public class ArrowManager : MonoBehaviour
         if(isAttached){
             //Makes sure the CurrentArrow follows along with the bow
             currentArrow.transform.localPosition = arrowStartPoint.transform.localPosition;
-            currentArrow.transform.localRotation = arrowStartPoint.transform.localRotation;
+            currentArrow.transform.localRotation = arrowStartPoint.transform.localRotation; 
 
             //Calculates how far to pull the string back based on difference in distance
             //between hands

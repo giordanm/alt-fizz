@@ -51,9 +51,9 @@ public class ReturnToStart : MonoBehaviour
     public void OnReleased()
     {
        // transform.position = initialLocalPosition;
-        transform.localRotation = initialLocalRotation;
-        rb.velocity = Vector3.zero;
-        rb.freezeRotation = true;
+       //transform.localRotation = initialLocalRotation;
+       rb.velocity = Vector3.zero;
+       rb.freezeRotation = true;
     }
 
     //does nothing when the object is grabbed
